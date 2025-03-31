@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css">
+    <title>campos de formulario en HTML</title>
+</head>
+<body>
+    <center><H1 style="color:blue;"> Campos de formulario en HTML</H1></center> 
+    
+
+        <h2><div style="background-color:blue;color:white;padding:0,1%;">Etiquetas para textos y números</div></h2>
+
+        <p>
+            <label for="texto">Escribe texto: </label>
+            <input id="texto" type="text" placeholder="escribe aquí un texto" required>
+         </p>
+         <p>
+            <label for="numero">Escribe numero: </label>
+            <input id="numero" type="number" value="2" min="0" max="5">
+         </p>
+         <p>
+            <label for="password">Escribe contraseña: </label>
+            <input id="password" type="password" value="pwd">
+         </p>
+         <p>
+            <label for="mail">Escribe e-mail: </label>
+            <input id="mail" type="email" value="cursosonline@e-gri.com">
+         </p>
+         <p>
+            <label for="rango">Selecciona: </label>
+            <input id="rango" type="range" min="10" max="50" step="10" list="marcas" value="30">
+            <datalist id="marcas">
+               <option value="10">
+               <option value="20">
+               <option value="30">
+               <option value="40">
+               <option value="50">
+            </datalist>
+         </p>
+         <p>
+            <label for="tlf">Escribe telefono: </label>
+            <input id="tlf" type="tel" value="900869415">
+         </p>
+         <p>
+            <label for="enlace">Escribe url: </label>
+            <input id="enlace" type="url" value="https://cursos.e-gri.com/">
+         </p>
+         <p>
+            <label label for="buscar">Texto a buscar: </label>
+            <input id="buscar" type="search" value="GRI">
+         </p>
+         <p>
+            <label label for="archivo">Selecciona archivo: </label>
+            <input id="archivo" type="file">
+         </p>
+         <p>
+            <label label for="color">Selecciona color: </label>
+            <input id="color" type="color" value="#36a8bf">
+         </p>
+
+         <h2><div style="background-color:blue;color:white;padding:0,1%;">Selección de opciones</div></h2>
+         <p>
+            <label for="opciones">Selecciona la opción: </label>
+            <input title="opcion1" name="opciones" value="1" id="opcion1" type="radio"> Opcion 1
+            <input title="opcion2" name="opciones" value="2" id="opcion2" type="radio"> Opcion 2
+            <input title="opcion3" name="opciones" value="3" id="opcion3" type="radio" checked> Opcion 3
+         </p>
+         <p>
+            <label for="checa">Verifica: </label>
+            <input id="checa" type="checkbox" checked>
+         </p>
+         <p>
+            <label for="seleccion">Selecciona (<b>select</b>): </label>
+            <select id="seleccion">
+               <optgroup label="FrontEnd">
+                  <option value="1">HTML</option>
+                  <option value="2">CSS</option>
+                  <option value="3" selected>JavaScript</option>
+               </optgroup>
+               <optgroup label="BackEnd">
+                  <option value="4">Java</option>
+                  <option value="5">Python</option>
+                  <option value="6">PHP</option>
+               </optgroup>
+               <optgroup label="Bases de Datos" disabled>
+                  <option>MySQL</option>
+                  <option>Mongo DB</option>
+                  <option>PostGresql</option>
+               </optgroup>
+            </select>
+         </p>
+         <p>
+            <label for="DataList">Selecciona (<b>datalist</b>): </label>
+            <input id="DataList" type="text" list="dataListClientes">
+            <datalist id="dataListClientes">
+               <option data-posicion="0" value="MySQL">
+               <option data-posicion="1" value="Mongo DB">
+               <option data-posicion="2" value="PostGresql">
+            </datalist>
+         </p>
+         <p>
+            <h3>><center><div style="background-color:rgb(235, 231, 17);color:black(202, 190, 19);padding:0,1%;">Selección de opciones</div></center></h3>
+         </p>
+         <h2><div style="background-color:blue;color:white;padding:0,1%;">Etiquetas para tiempo</div></h2>
+
+         <p>
+            <label for="fecha">Selecciona fecha: </label>
+            <input id="fecha" type="date" value="2022-05-10">
+         </p>
+
+<p>
+   <label for="fechaLocal">Selecciona fecha y hora: </label>
+   <input id="fechaLocal" type="datetime-local" value="2022-05-26T19:30">
+</p>
+<p>
+    <label for="hora">Selecciona hora: </label>
+    <input id="hora" type="time" value="19:30">
+ </p>
+ <p>
+    <p>Selecciona mes: </label>
+    <input id="mes" type="month" value="2022-05">
+ </p>
+ <p>
+    <label for="semana">Selecciona semana: </label>
+    <input id="semana" type="week" value="2022-W05">
+ </p>
+ <h2><div style="background-color:blue;color:white;padding:0,1%;">Textarea</div></h2>
+ <p>
+    <label for="textArea">Escribe algo: </label>
+    <textarea id="textArea" rows="3" cols="50">contenido</textarea>
+ </p>
+ <h2><div style="background-color:blue;color:white;padding:0,1%;">Botones</div></h2>
+ <p>
+    <label for="boton1">Botón sólo de texto </label>
+    <input id="boton1" type="button" value="Haz clic" onclick="alert('Hola gente!')">
+ </p>
+ <p>
+    <label for="boton2">Con capacidades gráficas: </label>
+    <button id="boton2" type="button" onclick="alert('Los saluda: Rita de la Torre')">
+       <img src="img/favicon.png" alt="Ok image" />
+    </button>
+ </p>
+ <hr>
+ <p>
+    Ver todos lo referente a formularios y sus atributos así como los atributos de los campos de formularios <button><a target='_blank' href="https://www.w3schools.com/html/html_forms.asp">  aqui.</a></button><p>
+ </p>
+ 
+</body>
+</html>
